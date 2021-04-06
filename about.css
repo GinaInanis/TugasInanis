@@ -1,0 +1,389 @@
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+
+    /*      Theme colors        */
+    --text-gray: #0000CD;
+    --text-light : #686666da;
+    --bg-color: #0f0f0f;
+    --midnight: #104f55;
+
+    /* gradient color   */
+ 
+    /*      theme font-family   */
+    --Lexend: 'Lexend', cursive;
+    --Livvic : 'Livvic', cursive;
+}
+
+
+/* ---------------- Global Classes ---------------*/
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: var(--text-gray);
+}
+
+p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+/* ------x------- Global Classes -------x-------*/
+
+/* --------------- navbar ----------------- */
+
+.nav{
+    background: white;
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{    
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse{
+    height: 30rem;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color:  #191970;
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: #F0FFFF;
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Lexend);
+    font-size: 1.6rem;
+}
+
+.nav .social{
+    padding: 1.4rem 0
+}
+
+.nav .social i{
+    padding: 0 .2rem;
+}
+
+.nav .social i:hover{
+    color: #a1c4cf;
+}
+
+/* -------x------- navbar ---------x------- */
+
+
+/* ----------------- Main Content----------- */
+
+/* --------------- Site title ---------------- */
+.site-title{
+    background: url('https://www.lendacademy.com/wp-content/uploads/2015/05/Marketplace-Lending-News.jpg');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+.site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+.margin-top20px
+{
+    margin-top: 20px;
+    }
+
+.post-title p{
+     font-size: 3rem;
+      color: red;
+       font-family: var(--Abel);
+} 
+
+
+.col-7 img{
+    width: 80%;
+}
+
+.post-1 ul
+{
+    margin: 0;
+    padding: 0;
+}
+.post-1 ul li
+{
+    list-style: none;
+    padding: 8px;
+    
+    font-family: var(--Lexend);
+    font-size: 1.5rem;
+    color: black;
+}
+
+.post-1 ul li{
+    border-bottom: 3px solid rgba(0,0,0,0.8);
+    margin-left: 40px;
+    margin-right: 40px;
+    color: black;
+}
+
+.post-1 ul li:hover
+{
+  
+    color: #B22222;
+}
+
+.post-2{
+    margin-top: 100px;
+}
+
+.post-2 ul
+{
+    margin: 0;
+    padding: 0;
+}
+.post-2 ul li
+{
+    list-style: none;
+    padding: 8px;
+
+    font-family: var(--Lexend);
+    font-size: 1.5rem;
+    color: black;
+}
+
+.post-2 ul li{
+    border-bottom: 3px solid rgba(0,0,0,0.8);
+    margin-left: 40px;
+    margin-right: 40px;
+    color: black;
+}
+
+.post-2 ul li:hover
+{
+  
+    color: #B22222;
+}
+
+.post-3{
+    margin-top: 100px;
+}
+
+.post-3 ul
+{
+    margin: 0;
+    padding: 0;
+}
+.post-3 ul li
+{
+    list-style: none;
+    padding: 8px;
+
+    font-family: var(--Lexend);
+    font-size: 1.5rem;
+    color: black;
+}
+
+.post-3 ul li{
+    border-bottom: 3px solid rgba(0,0,0,0.8);
+    margin-left: 40px;
+    margin-right: 40px;
+    color: black;
+}
+
+.post-3 ul li:hover
+{
+  
+    color: #B22222;
+}
+
+.col-7
+{
+    width: 70%;
+    min-height: 400px;
+    float: left;
+}
+
+
+.col-3
+{
+    width: 28%;
+    min-height: 150px;
+    background:#6495ED;
+    float: right;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.col-3 ul
+{
+    margin: 0;
+    padding: 0;
+}
+.col-3 ul li
+{
+    list-style: none;
+    padding: 8px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.col-3 a
+{
+    list-style: none;
+    padding: 8px;
+    font-family: New Century Schoolbook;
+    font-size: 1.2rem;
+    color:  black;
+}
+
+.col-3 a:hover
+{
+  
+    color: #fff;
+}
+
+.col-4
+{
+    width: 28%;
+    min-height: 150px;
+    float: right;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.col-4 ul
+{
+    margin: 0;
+    padding: 0;
+}
+.col-4 ul li
+{
+    list-style: none;
+    padding: 8px;
+    font-family: New Century Schoolbook;
+    font-size: 1.2rem;
+    color:  black;
+}
+
+.col-4 ul li
+{
+    list-style: none;
+    padding: 8px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.col-4 ul li:hover
+{
+  
+    color: #8B0000;
+}
+
+
+.col-4 img
+{
+    max-width: 75%;
+}
+
+
+
+@media (max-width: 900px)
+{
+
+    .navi ul li
+    {
+        display: block;
+        text-align: center;
+    }
+
+    .col-7,
+    .col-3,
+    .col-4
+    {
+        width: 100%;
+        float: none;
+    }
+    .col-3,
+    .col-4
+    {
+        margin-top: 20px;
+    }
+}
+
